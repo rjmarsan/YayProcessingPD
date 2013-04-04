@@ -7,19 +7,16 @@ import org.puredata.android.io.AudioParameters;
 import org.puredata.android.io.PdAudio;
 import org.puredata.core.PdBase;
 import org.puredata.core.utils.IoUtils;
-import org.puredata.core.utils.PdDispatcher;
-import org.puredata.core.utils.PdUtils;
-
-import android.util.Log;
-import android.widget.Toast;
 
 import processing.core.PApplet;
+import android.util.Log;
+import android.widget.Toast;
 
 
 public class YayProcessingPD extends PApplet {
 	private final String TAG = "YayProcessingPD";
-	public int sketchWidth() { return this.screenWidth; }
-	public int sketchHeight() { return this.screenHeight; }
+	public int sketchWidth() { return this.displayWidth; }
+	public int sketchHeight() { return this.displayHeight; }
 	public String sketchRenderer() { return PApplet.OPENGL; }
 
 	@Override
